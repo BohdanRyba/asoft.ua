@@ -17,12 +17,12 @@ before_script:
   - ./cc-test-reporter before-build
 
 script:
-  - vendor/bin/phpunit --coverage-text --coverage-clover build/logs/clover.xml
+  - vendor/bin/phpunit
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
 
 install:
   - travis_retry composer install --no-interaction --prefer-dist
-
+#  - vendor/bin/phpunit --coverage-text --coverage-clover build/logs/clover.xml
 # cache vendors
 #test
 cache:
