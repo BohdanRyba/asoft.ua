@@ -1,0 +1,30 @@
+language: php
+
+php:
+  - 7.2
+
+allow_failures:
+  - php: nightly
+
+before_install:
+  - travis_wait
+
+before_script:
+  - travis_wait travis_retry composer self-update
+  - composer install --prefer-source --no-interaction --dev
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - vendor/bin/phpunit
+
+install:
+  - travis_retry composer install --no-interaction --prefer-dist
+#  - vendor/bin/phpunit --coverage-text --coverage-clover build/logs/clover.xml
+# cache vendors
+#test
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
