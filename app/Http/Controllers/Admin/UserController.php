@@ -12,6 +12,15 @@ use Spatie\Permission\Models\Role;
 class UserController extends Controller
 {
 
+
+    /**
+     * UserController constructor.
+     */
+    public function __construct()
+    {
+
+    }
+
     public function index(Request $request)
     {
         $data = User::orderBy('id', 'DESC')->paginate(5);
