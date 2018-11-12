@@ -50,9 +50,10 @@
                         {{--</li>--}}
                         <li><a href="{{route('users.index')}}" class="menu-item">Users</a>
                         </li>
-                        <li><a href="wizard-forms.html" class="menu-item">Wizard</a>
-                        </li>
                     </ul>
+                </li>
+                <li class=" nav-item"><a href="{{route('blog.index')}}"><i class="ft-file-text"></i><span data-i18n=""
+                                                                                                 class="menu-title">Blog</span></a>
                 </li>
                 <li class=" nav-item"><a href="color-palette.html"><i class="ft-droplet"></i><span data-i18n=""
                                                                                                    class="menu-title">Color Palette</span></a>
@@ -61,9 +62,6 @@
                 </li>
                 <li class=" nav-item"><a href="chat.html"><i class="ft-message-square"></i><span data-i18n=""
                                                                                                  class="menu-title">Chat</span></a>
-                </li>
-                <li class=" nav-item"><a href="taskboard.html"><i class="ft-file-text"></i><span data-i18n=""
-                                                                                                 class="menu-title">Task Board</span></a>
                 </li>
                 <li class="has-sub nav-item"><a href="#"><i class="ft-aperture"></i><span data-i18n=""
                                                                                           class="menu-title">UI Kit</span></a>
