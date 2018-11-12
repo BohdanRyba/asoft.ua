@@ -27,38 +27,40 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                            {{--@foreach ($data as $key => $user)--}}
-                            {{--<tr>--}}
-                            {{--<td>{{ ++$i }}</td>--}}
-                            {{--<td>--}}
-                            {{--<div class="custom-control custom-checkbox m-0">--}}
-                            {{--<input type="checkbox" class="custom-control-input"--}}
-                            {{--id="item1">--}}
-                            {{--<label class="custom-control-label" for="item1"></label>--}}
-                            {{--</div>--}}
-                            {{--</td>--}}
-                            {{--<td>{{ $user->name }}</td>--}}
-                            {{--<td>{{ $user->email }}</td>--}}
-                            {{--<td>--}}
-                            {{--@if(!empty($user->getRoleNames()))--}}
-                            {{--@foreach($user->getRoleNames() as $v)--}}
-                            {{--<label class="badge badge-success">{{ $v }}</label>--}}
-                            {{--@endforeach--}}
-                            {{--@endif--}}
-                            {{--</td>--}}
-                            {{--<td>--}}
-                            {{--<a class="btn btn-info"--}}
-                            {{--href="{{ route('users.show',$user->id) }}">Show</a>--}}
-                            {{--<a class="btn btn-primary"--}}
-                            {{--href="{{ route('users.edit',$user->id) }}">Edit</a>--}}
-                            {{--{!! Form::open(['method' => 'DELETE','route' => ['users.destroy', $user->id],'style'=>'display:inline']) !!}--}}
-                            {{--{!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}--}}
-                            {{--{!! Form::close() !!}--}}
-                            {{--</td>--}}
-                            {{--</tr>--}}
-                            {{--@endforeach--}}
-                            {{--</tbody>--}}
-                            {{--</table>--}}
+                                @foreach ($posts as $post)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>
+                                            <div class="custom-control custom-checkbox m-0">
+                                                <input type="checkbox" class="custom-control-input"
+                                                       id="item1">
+                                                <label class="custom-control-label" for="item1"></label>
+                                            </div>
+                                        </td>
+                                        <td class="text-left">{{ $post->title }}</td>
+                                        <td>{{ $post->user_id }}</td>
+                                        <td>
+                                            @if(!empty($post->user))
+                                                @foreach($post->getRoleNames() as $v)
+                                                    <label class="badge badge-success">{{ $v }}</label>
+                                                @endforeach
+                                            @else
+                                                Hello
+                                            @endif
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-info"
+                                               href="{{ route('blog.show',$post->id) }}">Show</a>
+                                            <a class="btn btn-primary"
+                                               href="{{ route('blog.edit',$post->id) }}">Edit</a>
+                                            {!! Form::open(['method' => 'DELETE','route' => ['blog.destroy', $post->id],'style'=>'display:inline']) !!}
+                                            {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
+                                            {!! Form::close() !!}
+                                        </td>
+                                    </tr>
+                                @endforeach
+                                </tbody>
+                            </table>
                             {!! $posts->appends(request()->query())->links() !!}
 
                         </div>
