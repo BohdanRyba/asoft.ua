@@ -18,7 +18,6 @@ class UsersTableSeeder extends Seeder
             'email' => 'admin@gmail.com',
             'password' => \Illuminate\Support\Facades\Hash::make(24049898)
         ]);
-        dump($role, $user);
         $user[0]->assignRole($role);
 
 
