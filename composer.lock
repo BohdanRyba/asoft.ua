@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a832df0dc75870f8bbd26d9376bb3dc0",
+    "content-hash": "4a4d803b6b75caaee72d1b7871452e0c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -242,6 +242,131 @@
                 }
             ],
             "time": "2016-06-13T19:28:20+00:00"
+        },
+        {
+            "name": "box/spout",
+            "version": "v2.7.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/box/spout.git",
+                "reference": "3681a3421a868ab9a65da156c554f756541f452b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/box/spout/zipball/3681a3421a868ab9a65da156c554f756541f452b",
+                "reference": "3681a3421a868ab9a65da156c554f756541f452b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xmlreader": "*",
+                "ext-zip": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.0"
+            },
+            "suggest": {
+                "ext-iconv": "To handle non UTF-8 CSV files (if \"php-intl\" is not already installed or is too limited)",
+                "ext-intl": "To handle non UTF-8 CSV files (if \"iconv\" is not already installed)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Box\\Spout\\": "src/Spout"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Adrien Loison",
+                    "email": "adrien@box.com"
+                }
+            ],
+            "description": "PHP Library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way",
+            "homepage": "https://www.github.com/box/spout",
+            "keywords": [
+                "OOXML",
+                "csv",
+                "excel",
+                "memory",
+                "odf",
+                "ods",
+                "office",
+                "open",
+                "php",
+                "read",
+                "scale",
+                "spreadsheet",
+                "stream",
+                "write",
+                "xlsx"
+            ],
+            "time": "2017-09-25T19:44:35+00:00"
+        },
+        {
+            "name": "cakephp/chronos",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/chronos.git",
+                "reference": "395110125ff577f080fa064dca5c5608a4e77ee1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/chronos/zipball/395110125ff577f080fa064dca5c5608a4e77ee1",
+                "reference": "395110125ff577f080fa064dca5c5608a4e77ee1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|^7"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1",
+                "cakephp/cakephp-codesniffer": "^3.0",
+                "phpbench/phpbench": "@dev",
+                "phpstan/phpstan": "^0.6.4",
+                "phpunit/phpunit": "<6.0 || ^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cake\\Chronos\\": "src/"
+                },
+                "files": [
+                    "src/carbon_compat.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Nesbitt",
+                    "email": "brian@nesbot.com",
+                    "homepage": "http://nesbot.com"
+                },
+                {
+                    "name": "The CakePHP Team",
+                    "homepage": "http://cakephp.org"
+                }
+            ],
+            "description": "A simple API extension for DateTime.",
+            "homepage": "http://cakephp.org",
+            "keywords": [
+                "date",
+                "datetime",
+                "time"
+            ],
+            "time": "2018-10-18T22:02:21+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -545,6 +670,62 @@
                 "performance"
             ],
             "time": "2018-08-31T19:07:57+00:00"
+        },
+        {
+            "name": "danielstjules/stringy",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danielstjules/Stringy.git",
+                "reference": "df24ab62d2d8213bbbe88cc36fc35a4503b4bd7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danielstjules/Stringy/zipball/df24ab62d2d8213bbbe88cc36fc35a4503b4bd7e",
+                "reference": "df24ab62d2d8213bbbe88cc36fc35a4503b4bd7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "symfony/polyfill-mbstring": "~1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Stringy\\": "src/"
+                },
+                "files": [
+                    "src/Create.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel St. Jules",
+                    "email": "danielst.jules@gmail.com",
+                    "homepage": "http://www.danielstjules.com"
+                }
+            ],
+            "description": "A string manipulation library with multibyte support",
+            "homepage": "https://github.com/danielstjules/Stringy",
+            "keywords": [
+                "UTF",
+                "helpers",
+                "manipulation",
+                "methods",
+                "multibyte",
+                "string",
+                "utf-8",
+                "utility",
+                "utils"
+            ],
+            "time": "2017-06-12T01:10:27+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -907,6 +1088,187 @@
             "time": "2018-02-07T20:20:57+00:00"
         },
         {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2018-04-22T15:46:56+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20T10:07:11+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
             "name": "hisorange/browser-detect",
             "version": "3.1.4",
             "source": {
@@ -974,6 +1336,76 @@
                 "user-agent"
             ],
             "time": "2018-03-22T23:21:34+00:00"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "e82d274f786e3d4b866a59b173f42e716f0783eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/e82d274f786e3d4b866a59b173f42e716f0783eb",
+                "reference": "e82d274f786e3d4b866a59b173f42e716f0783eb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@olivervogel.com",
+                    "homepage": "http://olivervogel.com/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "time": "2018-05-29T14:19:03+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -1111,6 +1543,71 @@
             "time": "2018-10-31T13:15:59+00:00"
         },
         {
+            "name": "jenssegers/date",
+            "version": "v3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/date.git",
+                "reference": "3f5f94f28bd5108fab011869434209101d4189ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/date/zipball/3f5f94f28bd5108fab011869434209101d4189ae",
+                "reference": "3f5f94f28bd5108fab011869434209101d4189ae",
+                "shasum": ""
+            },
+            "require": {
+                "nesbot/carbon": "^1.0",
+                "php": ">=5.6",
+                "symfony/translation": "^2.7|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.0|^6.0|^7.0",
+                "satooshi/php-coveralls": "^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Date\\DateServiceProvider"
+                    ],
+                    "aliases": {
+                        "Date": "Jenssegers\\Date\\Date"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Date\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "A date library to help you work with dates in different languages",
+            "homepage": "https://github.com/jenssegers/date",
+            "keywords": [
+                "carbon",
+                "date",
+                "datetime",
+                "i18n",
+                "laravel",
+                "time",
+                "translation"
+            ],
+            "time": "2018-05-16T11:53:55+00:00"
+        },
+        {
             "name": "justinrainbow/json-schema",
             "version": "5.2.7",
             "source": {
@@ -1175,6 +1672,1596 @@
                 "schema"
             ],
             "time": "2018-02-14T22:26:30+00:00"
+        },
+        {
+            "name": "laravel-enso/actionlogger",
+            "version": "2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/ActionLogger.git",
+                "reference": "a65c6eac62954d4d95660e1112fa5b57b6396ab4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/ActionLogger/zipball/a65c6eac62954d4d95660e1112fa5b57b6396ab4",
+                "reference": "a65c6eac62954d4d95660e1112fa5b57b6396ab4",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\ActionLogger\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\ActionLogger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "User actions logger dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/ActionLogger",
+            "keywords": [
+                "action-logger",
+                "actionlogger",
+                "laravel-enso",
+                "logging"
+            ],
+            "time": "2018-10-25T05:05:05+00:00"
+        },
+        {
+            "name": "laravel-enso/activitylog",
+            "version": "1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/ActivityLog.git",
+                "reference": "d61d745cb1625b5eb7f385a04b33aeb500e4e2ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/ActivityLog/zipball/d61d745cb1625b5eb7f385a04b33aeb500e4e2ae",
+                "reference": "d61d745cb1625b5eb7f385a04b33aeb500e4e2ae",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/select": "2.7.*",
+                "laravel-enso/trackwho": "1.7.*",
+                "laravel-enso/vuecomponents": "2.5.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\ActivityLog\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\ActivityLog\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "User activity log dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/ActivityLog",
+            "keywords": [
+                "activity-log",
+                "activitylog",
+                "laravel-enso",
+                "logging"
+            ],
+            "time": "2018-10-29T08:08:26+00:00"
+        },
+        {
+            "name": "laravel-enso/avatarmanager",
+            "version": "2.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/AvatarManager.git",
+                "reference": "a3e174b2c94d1bb0ebd0b80eaba35b06464f80fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/AvatarManager/zipball/a3e174b2c94d1bb0ebd0b80eaba35b06464f80fa",
+                "reference": "a3e174b2c94d1bb0ebd0b80eaba35b06464f80fa",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/filemanager": "2.5.*",
+                "laravel-enso/imagetransformer": "1.4.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravolt/avatar": "2.0.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\AvatarManager\\AppServiceProvider",
+                        "LaravelEnso\\AvatarManager\\AuthServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\AvatarManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "User Avatar manager dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/AvatarManager",
+            "keywords": [
+                "avatar",
+                "avatar-manager",
+                "avatarmanager",
+                "laravel-enso"
+            ],
+            "time": "2018-10-28T12:37:54+00:00"
+        },
+        {
+            "name": "laravel-enso/charts",
+            "version": "2.5.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Charts.git",
+                "reference": "bc2ae98a74a41d148afb0a19b327e87886b63111"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Charts/zipball/bc2ae98a74a41d148afb0a19b327e87886b63111",
+                "reference": "bc2ae98a74a41d148afb0a19b327e87886b63111",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/vuecomponents": "2.5.*",
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\Charts\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Charts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Server-side data builder for Chart.js, with a VueJS component for the frontend.",
+            "homepage": "https://github.com/laravel-enso/Charts",
+            "keywords": [
+                "charts",
+                "laravel-enso"
+            ],
+            "time": "2018-10-22T06:31:06+00:00"
+        },
+        {
+            "name": "laravel-enso/core",
+            "version": "3.2.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Core.git",
+                "reference": "762cb786cac795d1e50987552a6035a0f6f69951"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Core/zipball/762cb786cac795d1e50987552a6035a0f6f69951",
+                "reference": "762cb786cac795d1e50987552a6035a0f6f69951",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "jenssegers/date": "^3.4",
+                "laravel-enso/actionlogger": "2.2.*",
+                "laravel-enso/activitylog": "1.1.*",
+                "laravel-enso/avatarmanager": "2.3.*",
+                "laravel-enso/charts": "2.5.*",
+                "laravel-enso/dataexport": "^1.0",
+                "laravel-enso/filemanager": "2.5.*",
+                "laravel-enso/formbuilder": "2.10.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/historytracker": "1.4.*",
+                "laravel-enso/impersonate": "2.3.*",
+                "laravel-enso/localisation": "2.4.*",
+                "laravel-enso/logmanager": "2.2.*",
+                "laravel-enso/menumanager": "2.3.*",
+                "laravel-enso/notifications": "2.2.*",
+                "laravel-enso/people": "1.0.*",
+                "laravel-enso/permissionmanager": "2.3.*",
+                "laravel-enso/rememberable": "1.4.*",
+                "laravel-enso/rolemanager": "2.5.*",
+                "laravel-enso/searchable": "1.0.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravel-enso/trackwho": "1.7.*",
+                "laravel-enso/tutorialmanager": "2.2.*",
+                "laravel-enso/versioning": "1.1.*",
+                "laravel-enso/vuecomponents": "2.5.*",
+                "laravel-enso/vuedatatable": "1.7.*",
+                "laravel/framework": "5.7.*",
+                "laravel/horizon": "^1.3",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\Core\\AppServiceProvider",
+                        "LaravelEnso\\Core\\AuthServiceProvider",
+                        "LaravelEnso\\Core\\EventServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mihai Ocneanu",
+                    "email": "mihai.ocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ionut Pirvulescu",
+                    "email": "ionut.pirvulescu1@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Main requirement & dependency aggregator for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/Core",
+            "keywords": [
+                "enso-core",
+                "laravel-boilerplate",
+                "laravel-enso",
+                "vue-bulma",
+                "vue-spa"
+            ],
+            "time": "2018-11-12T05:23:50+00:00"
+        },
+        {
+            "name": "laravel-enso/dataexport",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/DataExport.git",
+                "reference": "c7a81e386cf73d716ab9b785ac9af64ff28816dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/DataExport/zipball/c7a81e386cf73d716ab9b785ac9af64ff28816dd",
+                "reference": "c7a81e386cf73d716ab9b785ac9af64ff28816dd",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/filemanager": "2.5.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/trackwho": "1.7.*",
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\DataExport\\AppServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\DataExport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Structure for holding Laravel-Enso exports",
+            "homepage": "https://github.com/laravel-enso/DataExport",
+            "keywords": [
+                "data-export",
+                "enso-exports",
+                "laravel-enso"
+            ],
+            "time": "2018-10-28T09:09:51+00:00"
+        },
+        {
+            "name": "laravel-enso/filemanager",
+            "version": "2.5.26",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/FileManager.git",
+                "reference": "3f2a35e5104e2dbd72fb98e2977e89e103fc6f5f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/FileManager/zipball/3f2a35e5104e2dbd72fb98e2977e89e103fc6f5f",
+                "reference": "3f2a35e5104e2dbd72fb98e2977e89e103fc6f5f",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/imagetransformer": "1.4.*",
+                "laravel-enso/trackwho": "1.7.*",
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\FileManager\\AppServiceProvider",
+                        "LaravelEnso\\FileManager\\AuthServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\FileManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "File manager dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/FileManager",
+            "keywords": [
+                "file-manager",
+                "file-uploader",
+                "filemanager",
+                "laravel-enso"
+            ],
+            "time": "2018-10-28T13:26:06+00:00"
+        },
+        {
+            "name": "laravel-enso/formbuilder",
+            "version": "2.10.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/FormBuilder.git",
+                "reference": "f1e09c00c08e66514f09cfeed727953fd6f132bc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/FormBuilder/zipball/f1e09c00c08e66514f09cfeed727953fd6f132bc",
+                "reference": "f1e09c00c08e66514f09cfeed727953fd6f132bc",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/select": "2.7.*",
+                "laravel-enso/vuecomponents": "2.5.*",
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\FormBuilder\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\FormBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Form builder for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/FormBuilder",
+            "keywords": [
+                "Forms",
+                "form-builder",
+                "laravel-enso"
+            ],
+            "time": "2018-11-11T14:38:45+00:00"
+        },
+        {
+            "name": "laravel-enso/helpers",
+            "version": "1.9.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Helpers.git",
+                "reference": "fa1963ab9ed65b2ace18d4454addf555984da121"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Helpers/zipball/fa1963ab9ed65b2ace18d4454addf555984da121",
+                "reference": "fa1963ab9ed65b2ace18d4454addf555984da121",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "EnsoException": "LaravelEnso\\Helpers\\app\\Exceptions\\EnsoException"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Helpers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Helper classes dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/Helpers",
+            "keywords": [
+                "helpers",
+                "laravel-enso"
+            ],
+            "time": "2018-11-05T10:20:14+00:00"
+        },
+        {
+            "name": "laravel-enso/historytracker",
+            "version": "1.4.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/HistoryTracker.git",
+                "reference": "544b2b116c1ac65c2bf11ab874a4c59b8778add4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/HistoryTracker/zipball/544b2b116c1ac65c2bf11ab874a4c59b8778add4",
+                "reference": "544b2b116c1ac65c2bf11ab874a4c59b8778add4",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\HistoryTracker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Model history tracking dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/HistoryTracker",
+            "keywords": [
+                "history-tracker",
+                "historytracker",
+                "laravel-enso"
+            ],
+            "time": "2018-10-21T11:19:29+00:00"
+        },
+        {
+            "name": "laravel-enso/imagetransformer",
+            "version": "1.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/ImageTransformer.git",
+                "reference": "f8f22628d2b0a2088b9aa37bb91bcfc23774128d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/ImageTransformer/zipball/f8f22628d2b0a2088b9aa37bb91bcfc23774128d",
+                "reference": "f8f22628d2b0a2088b9aa37bb91bcfc23774128d",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": "^2.4",
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0",
+                "spatie/laravel-image-optimizer": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\ImageTransformer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Image transformer dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/ImageTransformer",
+            "keywords": [
+                "image-optimizer",
+                "image-transformer",
+                "imagetransformer",
+                "laravel-enso"
+            ],
+            "time": "2018-10-21T11:21:03+00:00"
+        },
+        {
+            "name": "laravel-enso/impersonate",
+            "version": "2.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Impersonate.git",
+                "reference": "042c4d83b6f76d7d8ef1f5280a7a1ba3f2141367"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Impersonate/zipball/042c4d83b6f76d7d8ef1f5280a7a1ba3f2141367",
+                "reference": "042c4d83b6f76d7d8ef1f5280a7a1ba3f2141367",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/menumanager": "2.3.*",
+                "laravel-enso/permissionmanager": "2.3.*",
+                "laravel-enso/rolemanager": "2.5.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\Impersonate\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Impersonate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "User impersonation dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/Impersonate",
+            "keywords": [
+                "impersonate",
+                "impersonate-users",
+                "laravel-enso"
+            ],
+            "time": "2018-10-25T07:05:59+00:00"
+        },
+        {
+            "name": "laravel-enso/localisation",
+            "version": "2.4.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Localisation.git",
+                "reference": "88d466a42b85c5a3600a54a620a1cf1ad224e9aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Localisation/zipball/88d466a42b85c5a3600a54a620a1cf1ad224e9aa",
+                "reference": "88d466a42b85c5a3600a54a620a1cf1ad224e9aa",
+                "shasum": ""
+            },
+            "require": {
+                "jenssegers/date": "^3.4",
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/formbuilder": "2.10.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/select": "2.7.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravel-enso/vuedatatable": "1.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\Localisation\\AppServiceProvider",
+                        "LaravelEnso\\Localisation\\AuthServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Localisation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Localisation management dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/Localisation",
+            "keywords": [
+                "laravel-enso",
+                "localisation"
+            ],
+            "time": "2018-11-02T07:18:52+00:00"
+        },
+        {
+            "name": "laravel-enso/logmanager",
+            "version": "2.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/LogManager.git",
+                "reference": "520ef3aa05ab886e97e88a033213d8b166fdaeae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/LogManager/zipball/520ef3aa05ab886e97e88a033213d8b166fdaeae",
+                "reference": "520ef3aa05ab886e97e88a033213d8b166fdaeae",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravel-enso/vuecomponents": "2.5.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\LogManager\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\LogManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Log management dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/LogManager",
+            "keywords": [
+                "laravel-enso",
+                "laravel-logs",
+                "log-manager",
+                "logmanager"
+            ],
+            "time": "2018-10-25T07:18:54+00:00"
+        },
+        {
+            "name": "laravel-enso/menumanager",
+            "version": "2.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/MenuManager.git",
+                "reference": "71d849da92158cdefaee6ecdb3d9b824c1823414"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/MenuManager/zipball/71d849da92158cdefaee6ecdb3d9b824c1823414",
+                "reference": "71d849da92158cdefaee6ecdb3d9b824c1823414",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/formbuilder": "2.10.*",
+                "laravel-enso/rolemanager": "2.5.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravel-enso/vuedatatable": "1.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\MenuManager\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\MenuManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Menu Manager dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/MenuManager",
+            "keywords": [
+                "breadcrumbs",
+                "laravel-enso",
+                "laravel-menu",
+                "menu-manager",
+                "menumanager"
+            ],
+            "time": "2018-11-02T07:19:28+00:00"
+        },
+        {
+            "name": "laravel-enso/notifications",
+            "version": "2.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Notifications.git",
+                "reference": "76b24ab0fcf3f6a9233d38fda15d48aefa0c7009"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Notifications/zipball/76b24ab0fcf3f6a9233d38fda15d48aefa0c7009",
+                "reference": "76b24ab0fcf3f6a9233d38fda15d48aefa0c7009",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "php": ">=7.1.0",
+                "pusher/pusher-php-server": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\Notifications\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Notifications\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Notifications functionality dependency for LaravelEnso",
+            "homepage": "https://github.com/laravel-enso/Notifications",
+            "keywords": [
+                "laravel-enso",
+                "laravel-notifications",
+                "notifications",
+                "push-notifications"
+            ],
+            "time": "2018-10-31T05:28:37+00:00"
+        },
+        {
+            "name": "laravel-enso/people",
+            "version": "1.0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/People.git",
+                "reference": "0870aa8920d2577aaa437c5d3e9be1ae4ee455e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/People/zipball/0870aa8920d2577aaa437c5d3e9be1ae4ee455e1",
+                "reference": "0870aa8920d2577aaa437c5d3e9be1ae4ee455e1",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/activitylog": "1.1.*",
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/formbuilder": "2.10.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravel-enso/trackwho": "1.7.*",
+                "laravel-enso/vuedatatable": "1.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\People\\AppServiceProvider",
+                        "LaravelEnso\\People\\RequestValidationProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\People\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Person management dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/People",
+            "keywords": [
+                "laravel-enso",
+                "people",
+                "person-management"
+            ],
+            "time": "2018-11-06T06:05:32+00:00"
+        },
+        {
+            "name": "laravel-enso/permissionmanager",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/PermissionManager.git",
+                "reference": "050d9252cef5c5030c824ebc0dbcf4ee99a2401f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/PermissionManager/zipball/050d9252cef5c5030c824ebc0dbcf4ee99a2401f",
+                "reference": "050d9252cef5c5030c824ebc0dbcf4ee99a2401f",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/formbuilder": "2.10.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/rolemanager": "2.5.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravel-enso/tutorialmanager": "2.2.*",
+                "laravel-enso/vuedatatable": "1.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\PermissionManager\\AppServiceProvider",
+                        "LaravelEnso\\PermissionManager\\AuthServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\PermissionManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission Manager dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/PermissionManager",
+            "keywords": [
+                "laravel-enso",
+                "laravel-permissions",
+                "permission-manager"
+            ],
+            "time": "2018-10-25T08:16:45+00:00"
+        },
+        {
+            "name": "laravel-enso/rememberable",
+            "version": "1.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Rememberable.git",
+                "reference": "f056d24c94e5380bfb48fac2940b7aa87272863c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Rememberable/zipball/f056d24c94e5380bfb48fac2940b7aa87272863c",
+                "reference": "f056d24c94e5380bfb48fac2940b7aa87272863c",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\RememberableModels\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Model caching dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/Rememberable",
+            "keywords": [
+                "laravel-cache",
+                "laravel-enso",
+                "model-cache",
+                "rememberable"
+            ],
+            "time": "2018-10-21T12:02:55+00:00"
+        },
+        {
+            "name": "laravel-enso/rolemanager",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/RoleManager.git",
+                "reference": "91829fa524a2b9db97e423a042bd1fa08aeae065"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/RoleManager/zipball/91829fa524a2b9db97e423a042bd1fa08aeae065",
+                "reference": "91829fa524a2b9db97e423a042bd1fa08aeae065",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/formbuilder": "2.10.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/menumanager": "2.3.*",
+                "laravel-enso/permissionmanager": "2.3.*",
+                "laravel-enso/select": "2.7.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravel-enso/vuecomponents": "2.5.*",
+                "laravel-enso/vuedatatable": "1.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\RoleManager\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\RoleManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Role Manager dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/RoleManager",
+            "keywords": [
+                "laravel-enso",
+                "laravel-roles",
+                "role-manager",
+                "rolemanager"
+            ],
+            "time": "2018-10-25T08:27:55+00:00"
+        },
+        {
+            "name": "laravel-enso/searchable",
+            "version": "1.0.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Searchable.git",
+                "reference": "86e6b1213e468cedbdde2f441669ccab8e6679b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Searchable/zipball/86e6b1213e468cedbdde2f441669ccab8e6679b2",
+                "reference": "86e6b1213e468cedbdde2f441669ccab8e6679b2",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/vuecomponents": "2.5.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\Searchable\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Searchable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Searchable dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/Searchable",
+            "keywords": [
+                "laravel-enso",
+                "searchable"
+            ],
+            "time": "2018-11-08T14:34:52+00:00"
+        },
+        {
+            "name": "laravel-enso/select",
+            "version": "2.7.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Select.git",
+                "reference": "21cb0081544c0868fdd0d708a0771daab4ac8534"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Select/zipball/21cb0081544c0868fdd0d708a0771daab4ac8534",
+                "reference": "21cb0081544c0868fdd0d708a0771daab4ac8534",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\Select\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Select\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bootstrap Select data builder with server-side data fetching capability and a VueJS component",
+            "homepage": "https://github.com/laravel-enso/Select",
+            "keywords": [
+                "bootstrap-select",
+                "laravel-enso",
+                "select",
+                "select-server-side"
+            ],
+            "time": "2018-11-10T09:34:39+00:00"
+        },
+        {
+            "name": "laravel-enso/structuremanager",
+            "version": "2.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/StructureManager.git",
+                "reference": "eb086f514c33aba40ce725366718aef674b5240e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/StructureManager/zipball/eb086f514c33aba40ce725366718aef674b5240e",
+                "reference": "eb086f514c33aba40ce725366718aef674b5240e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/menumanager": "2.3.*",
+                "laravel-enso/permissionmanager": "2.3.*",
+                "laravel-enso/rolemanager": "2.5.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\StructureManager\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\StructureManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Structure Manager dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/StructureManager",
+            "keywords": [
+                "enso-helper",
+                "laravel-enso",
+                "structuremanager"
+            ],
+            "time": "2018-11-10T09:25:08+00:00"
+        },
+        {
+            "name": "laravel-enso/trackwho",
+            "version": "1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/TrackWho.git",
+                "reference": "d12d142bf4b99dfec9af5f50a66dd62d81eac92b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/TrackWho/zipball/d12d142bf4b99dfec9af5f50a66dd62d81eac92b",
+                "reference": "d12d142bf4b99dfec9af5f50a66dd62d81eac92b",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.7.*",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\TrackWho\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\TrackWho\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Create, update and delete authoring tracking dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/TrackWho",
+            "keywords": [
+                "laravel-enso",
+                "track-who",
+                "trackwho"
+            ],
+            "time": "2018-11-10T06:19:05+00:00"
+        },
+        {
+            "name": "laravel-enso/tutorialmanager",
+            "version": "2.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/TutorialManager.git",
+                "reference": "32c02287f060c6fb237b2a3b3d5cab58304ce6d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/TutorialManager/zipball/32c02287f060c6fb237b2a3b3d5cab58304ce6d5",
+                "reference": "32c02287f060c6fb237b2a3b3d5cab58304ce6d5",
+                "shasum": ""
+            },
+            "require": {
+                "laravel-enso/activitylog": "1.1.*",
+                "laravel-enso/core": "3.2.*",
+                "laravel-enso/formbuilder": "2.10.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/permissionmanager": "2.3.*",
+                "laravel-enso/structuremanager": "2.4.*",
+                "laravel-enso/vuedatatable": "1.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\TutorialManager\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\TutorialManager\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tutorial management dependency for Laravel Enso",
+            "homepage": "https://github.com/laravel-enso/TutorialManager",
+            "keywords": [
+                "bootstrap-tour",
+                "laravel-enso",
+                "tutorial-manager",
+                "tutorialmanager"
+            ],
+            "time": "2018-10-25T07:41:16+00:00"
+        },
+        {
+            "name": "laravel-enso/versioning",
+            "version": "1.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/Versioning.git",
+                "reference": "9dafc0beda58d5361dd6e186291df6f75f92e46a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/Versioning/zipball/9dafc0beda58d5361dd6e186291df6f75f92e46a",
+                "reference": "9dafc0beda58d5361dd6e186291df6f75f92e46a",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\Versioning\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\Versioning\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Prevents update conflicts using the optimistic lock pattern in Laravel",
+            "homepage": "https://github.com/laravel-enso/Versioning",
+            "keywords": [
+                "laravel-enso",
+                "optimistic-lock",
+                "trait",
+                "versioning"
+            ],
+            "time": "2018-10-21T12:27:47+00:00"
+        },
+        {
+            "name": "laravel-enso/vuecomponents",
+            "version": "2.5.37",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/VueComponents.git",
+                "reference": "6e8a782955cca7e7288466c33921289a0892ea02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/VueComponents/zipball/6e8a782955cca7e7288466c33921289a0892ea02",
+                "reference": "6e8a782955cca7e7288466c33921289a0892ea02",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\VueComponents\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\VueComponents\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Enso Vue Components",
+            "homepage": "https://github.com/laravel-enso/VueComponents",
+            "keywords": [
+                "laravel-enso",
+                "vue-component",
+                "vue-components"
+            ],
+            "time": "2018-11-09T10:26:49+00:00"
+        },
+        {
+            "name": "laravel-enso/vuedatatable",
+            "version": "1.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-enso/VueDatatable.git",
+                "reference": "869b505b18240c3dc7f1cd77def0389284794faf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-enso/VueDatatable/zipball/869b505b18240c3dc7f1cd77def0389284794faf",
+                "reference": "869b505b18240c3dc7f1cd77def0389284794faf",
+                "shasum": ""
+            },
+            "require": {
+                "box/spout": "2.7.*",
+                "laravel-enso/dataexport": "1.0.*",
+                "laravel-enso/helpers": "1.9.*",
+                "laravel-enso/vuecomponents": "2.5.*",
+                "laravel/framework": "5.7.*",
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelEnso\\VueDatatable\\AppServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelEnso\\VueDatatable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adrian Ocneanu",
+                    "email": "aocneanu@gmail.com",
+                    "homepage": "https://laravel-enso.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Data Table library with server-side processing and a VueJS component",
+            "homepage": "https://github.com/laravel-enso/VueDatatable",
+            "keywords": [
+                "data-table",
+                "data-table-server-side",
+                "datatable",
+                "laravel-enso"
+            ],
+            "time": "2018-11-08T07:08:08+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1320,6 +3407,74 @@
             "time": "2018-10-30T14:44:34+00:00"
         },
         {
+            "name": "laravel/horizon",
+            "version": "v1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/horizon.git",
+                "reference": "b00da78d10158036cab2f45115ecc360f2014ed4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/horizon/zipball/b00da78d10158036cab2f45115ecc360f2014ed4",
+                "reference": "b00da78d10158036cab2f45115ecc360f2014ed4",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/chronos": "^1.0",
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "illuminate/contracts": "~5.5",
+                "illuminate/queue": "~5.5",
+                "illuminate/support": "~5.5",
+                "php": ">=7.1.0",
+                "predis/predis": "^1.1",
+                "ramsey/uuid": "^3.5",
+                "symfony/debug": "~3.3|~4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.0",
+                "orchestra/database": "~3.5",
+                "orchestra/testbench": "~3.5",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Horizon\\HorizonServiceProvider"
+                    ],
+                    "aliases": {
+                        "Horizon": "Laravel\\Horizon\\Horizon"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Horizon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Dashboard and code-driven configuration for Laravel queues.",
+            "keywords": [
+                "laravel",
+                "queue"
+            ],
+            "time": "2018-11-01T14:03:51+00:00"
+        },
+        {
             "name": "laravel/tinker",
             "version": "v1.0.8",
             "source": {
@@ -1449,6 +3604,71 @@
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "https://laravelcollective.com",
             "time": "2018-09-05T18:32:53+00:00"
+        },
+        {
+            "name": "laravolt/avatar",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravolt/avatar.git",
+                "reference": "28eecefb0dd3ed6c84de44d4637bbd1346d4d63e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravolt/avatar/zipball/28eecefb0dd3ed6c84de44d4637bbd1346d4d63e",
+                "reference": "28eecefb0dd3ed6c84de44d4637bbd1346d4d63e",
+                "shasum": ""
+            },
+            "require": {
+                "danielstjules/stringy": "~3.1",
+                "illuminate/cache": "~5.2",
+                "illuminate/support": "~5.2",
+                "intervention/image": "^2.1",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.1",
+                "phpunit/phpunit": "~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravolt\\Avatar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Avatar": "Laravolt\\Avatar\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravolt\\Avatar\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bayu Hendra Winata",
+                    "email": "uyab.exe@gmail.com",
+                    "homepage": "http://id-laravel.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Turn name, email, and any other string into beautiful, initial-based avatar.",
+            "homepage": "https://github.com/laravolt/avatar",
+            "keywords": [
+                "avatar",
+                "laravel",
+                "laravolt"
+            ],
+            "time": "2018-11-08T08:36:25+00:00"
         },
         {
             "name": "lcobucci/jwt",
@@ -2095,6 +4315,88 @@
             "time": "2018-07-02T15:55:56+00:00"
         },
         {
+            "name": "paragonie/sodium_compat",
+            "version": "v1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/sodium_compat.git",
+                "reference": "7b73005be3c224f12c47bd75a23ce24b762e47e8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/7b73005be3c224f12c47bd75a23ce24b762e47e8",
+                "reference": "7b73005be3c224f12c47bd75a23ce24b762e47e8",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": ">=1",
+                "php": "^5.2.4|^5.3|^5.4|^5.5|^5.6|^7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^3|^4|^5"
+            },
+            "suggest": {
+                "ext-libsodium": "PHP < 7.0: Better performance, password hashing (Argon2i), secure memory management (memzero), and better security.",
+                "ext-sodium": "PHP >= 7.0: Better performance, password hashing (Argon2i), secure memory management (memzero), and better security."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com"
+                },
+                {
+                    "name": "Frank Denis",
+                    "email": "jedisct1@pureftpd.org"
+                }
+            ],
+            "description": "Pure PHP implementation of libsodium; uses the PHP extension if it exists",
+            "keywords": [
+                "Authentication",
+                "BLAKE2b",
+                "ChaCha20",
+                "ChaCha20-Poly1305",
+                "Chapoly",
+                "Curve25519",
+                "Ed25519",
+                "EdDSA",
+                "Edwards-curve Digital Signature Algorithm",
+                "Elliptic Curve Diffie-Hellman",
+                "Poly1305",
+                "Pure-PHP cryptography",
+                "RFC 7748",
+                "RFC 8032",
+                "Salpoly",
+                "Salsa20",
+                "X25519",
+                "XChaCha20-Poly1305",
+                "XSalsa20-Poly1305",
+                "Xchacha20",
+                "Xsalsa20",
+                "aead",
+                "cryptography",
+                "ecdh",
+                "elliptic curve",
+                "elliptic curve cryptography",
+                "encryption",
+                "libsodium",
+                "php",
+                "public-key cryptography",
+                "secret-key cryptography",
+                "side-channel resistant"
+            ],
+            "time": "2018-09-22T03:59:58+00:00"
+        },
+        {
             "name": "piwik/device-detector",
             "version": "3.11.2",
             "source": {
@@ -2246,6 +4548,56 @@
                 "psr"
             ],
             "time": "2017-02-14T16:28:37+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
         },
         {
             "name": "psr/log",
@@ -2415,6 +4767,60 @@
                 "shell"
             ],
             "time": "2018-10-13T15:16:03+00:00"
+        },
+        {
+            "name": "pusher/pusher-php-server",
+            "version": "v3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pusher/pusher-http-php.git",
+                "reference": "4da4d208fe13fd2ff71ede5063a3456f23f38cf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/4da4d208fe13fd2ff71ede5063a3456f23f38cf7",
+                "reference": "4da4d208fe13fd2ff71ede5063a3456f23f38cf7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "paragonie/sodium_compat": "^1.6",
+                "php": "^5.4 || ^7.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pusher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Library for interacting with the Pusher REST API",
+            "keywords": [
+                "events",
+                "messaging",
+                "php-pusher-server",
+                "publish",
+                "push",
+                "pusher",
+                "real time",
+                "real-time",
+                "realtime",
+                "rest",
+                "trigger"
+            ],
+            "time": "2018-08-13T14:57:32+00:00"
         },
         {
             "name": "ramsey/uuid",
@@ -2590,6 +4996,114 @@
                 "phra"
             ],
             "time": "2015-10-13T18:44:15+00:00"
+        },
+        {
+            "name": "spatie/image-optimizer",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image-optimizer.git",
+                "reference": "620ee03c6ef0bfb5f0646e595de15965f55c4c61"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/620ee03c6ef0bfb5f0646e595de15965f55c4c61",
+                "reference": "620ee03c6ef0bfb5f0646e595de15965f55c4c61",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "psr/log": "^1.0",
+                "symfony/process": "^2.8|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2|^7.0",
+                "symfony/var-dumper": "^3.0|^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ImageOptimizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily optimize images using PHP",
+            "homepage": "https://github.com/spatie/image-optimizer",
+            "keywords": [
+                "image-optimizer",
+                "spatie"
+            ],
+            "time": "2018-10-10T13:05:23+00:00"
+        },
+        {
+            "name": "spatie/laravel-image-optimizer",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-image-optimizer.git",
+                "reference": "d4c8f831d60f3a68dc5323910a6670d9819a4e3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-image-optimizer/zipball/d4c8f831d60f3a68dc5323910a6670d9819a4e3e",
+                "reference": "d4c8f831d60f3a68dc5323910a6670d9819a4e3e",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "~5.5.0|~5.6.0|~5.7.0",
+                "php": "^7.0",
+                "spatie/image-optimizer": "^1.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
+                "phpunit/phpunit": "^6.3|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\LaravelImageOptimizer\\ImageOptimizerServiceProvider"
+                    ],
+                    "aliases": {
+                        "ImageOptimizer": "Spatie\\LaravelImageOptimizer\\Facades\\ImageOptimizer"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelImageOptimizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Optimize images in your Laravel app",
+            "homepage": "https://github.com/spatie/laravel-image-optimizer",
+            "keywords": [
+                "laravel-image-optimizer",
+                "spatie"
+            ],
+            "time": "2018-08-27T14:44:11+00:00"
         },
         {
             "name": "spatie/laravel-permission",

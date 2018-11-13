@@ -3,7 +3,7 @@
 
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.7.12 on 2018-11-03 22:00:14.
+ * Generated for Laravel 5.7.12 on 2018-11-13 00:02:27.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -7443,16 +7443,28 @@ namespace Illuminate\Support\Facades {
         }
         
         /**
+         * Get the number of queue jobs that are ready to process.
+         *
+         * @param string|null $queue
+         * @return int 
+         * @static 
+         */ 
+        public static function readyNow($queue = null)
+        {
+            return \Laravel\Horizon\RedisQueue::readyNow($queue);
+        }
+        
+        /**
          * Migrate the delayed jobs that are ready to the regular queue.
          *
          * @param string $from
          * @param string $to
-         * @return array 
+         * @return void 
          * @static 
          */ 
         public static function migrateExpiredJobs($from, $to)
         {
-            return \Illuminate\Queue\RedisQueue::migrateExpiredJobs($from, $to);
+            \Laravel\Horizon\RedisQueue::migrateExpiredJobs($from, $to);
         }
         
         /**
@@ -7465,7 +7477,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function deleteReserved($queue, $job)
         {
-            \Illuminate\Queue\RedisQueue::deleteReserved($queue, $job);
+            \Laravel\Horizon\RedisQueue::deleteReserved($queue, $job);
         }
         
         /**
@@ -7479,7 +7491,7 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function deleteAndRelease($queue, $job, $delay)
         {
-            \Illuminate\Queue\RedisQueue::deleteAndRelease($queue, $job, $delay);
+            \Laravel\Horizon\RedisQueue::deleteAndRelease($queue, $job, $delay);
         }
         
         /**
@@ -7491,7 +7503,8 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function getQueue($queue)
         {
-            return \Illuminate\Queue\RedisQueue::getQueue($queue);
+            //Method inherited from \Illuminate\Queue\RedisQueue            
+            return \Laravel\Horizon\RedisQueue::getQueue($queue);
         }
         
         /**
@@ -7502,7 +7515,8 @@ namespace Illuminate\Support\Facades {
          */ 
         public static function getRedis()
         {
-            return \Illuminate\Queue\RedisQueue::getRedis();
+            //Method inherited from \Illuminate\Queue\RedisQueue            
+            return \Laravel\Horizon\RedisQueue::getRedis();
         }
         
         /**
@@ -7515,7 +7529,7 @@ namespace Illuminate\Support\Facades {
         public static function getJobExpiration($job)
         {
             //Method inherited from \Illuminate\Queue\Queue            
-            return \Illuminate\Queue\RedisQueue::getJobExpiration($job);
+            return \Laravel\Horizon\RedisQueue::getJobExpiration($job);
         }
         
         /**
@@ -7528,7 +7542,7 @@ namespace Illuminate\Support\Facades {
         public static function createPayloadUsing($callback)
         {
             //Method inherited from \Illuminate\Queue\Queue            
-            \Illuminate\Queue\RedisQueue::createPayloadUsing($callback);
+            \Laravel\Horizon\RedisQueue::createPayloadUsing($callback);
         }
         
         /**
@@ -7541,7 +7555,7 @@ namespace Illuminate\Support\Facades {
         public static function setContainer($container)
         {
             //Method inherited from \Illuminate\Queue\Queue            
-            \Illuminate\Queue\RedisQueue::setContainer($container);
+            \Laravel\Horizon\RedisQueue::setContainer($container);
         }
          
     }
@@ -15489,6 +15503,341 @@ namespace hisorange\BrowserDetect {
  
 }
 
+namespace Intervention\Image\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class Image {
+        
+        /**
+         * Overrides configuration settings
+         *
+         * @param array $config
+         * @return self 
+         * @static 
+         */ 
+        public static function configure($config = array())
+        {
+            return \Intervention\Image\ImageManager::configure($config);
+        }
+        
+        /**
+         * Initiates an Image instance from different input types
+         *
+         * @param mixed $data
+         * @return \Intervention\Image\Image 
+         * @static 
+         */ 
+        public static function make($data)
+        {
+            return \Intervention\Image\ImageManager::make($data);
+        }
+        
+        /**
+         * Creates an empty image canvas
+         *
+         * @param int $width
+         * @param int $height
+         * @param mixed $background
+         * @return \Intervention\Image\Image 
+         * @static 
+         */ 
+        public static function canvas($width, $height, $background = null)
+        {
+            return \Intervention\Image\ImageManager::canvas($width, $height, $background);
+        }
+        
+        /**
+         * Create new cached image and run callback
+         * (requires additional package intervention/imagecache)
+         *
+         * @param \Closure $callback
+         * @param int $lifetime
+         * @param boolean $returnObj
+         * @return \Image 
+         * @static 
+         */ 
+        public static function cache($callback, $lifetime = null, $returnObj = false)
+        {
+            return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
+        }
+         
+    }
+ 
+}
+
+namespace Jenssegers\Date { 
+
+    /**
+     * 
+     *
+     */ 
+    class Date {
+         
+    }
+ 
+}
+
+namespace LaravelEnso\Helpers\app\Exceptions { 
+
+    /**
+     * 
+     *
+     */ 
+    class EnsoException {
+         
+    }
+ 
+}
+
+namespace Laravel\Horizon { 
+
+    /**
+     * 
+     *
+     */ 
+    class Horizon {
+         
+    }
+ 
+}
+
+namespace Laravolt\Avatar { 
+
+    /**
+     * 
+     *
+     */ 
+    class Facade {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setGenerator($generator)
+        {
+            return \Laravolt\Avatar\Avatar::setGenerator($generator);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function create($name)
+        {
+            return \Laravolt\Avatar\Avatar::create($name);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setFont($font)
+        {
+            return \Laravolt\Avatar\Avatar::setFont($font);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function toBase64()
+        {
+            return \Laravolt\Avatar\Avatar::toBase64();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function save($path, $quality = 90)
+        {
+            return \Laravolt\Avatar\Avatar::save($path, $quality);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function toSvg()
+        {
+            return \Laravolt\Avatar\Avatar::toSvg();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setBackground($hex)
+        {
+            return \Laravolt\Avatar\Avatar::setBackground($hex);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setForeground($hex)
+        {
+            return \Laravolt\Avatar\Avatar::setForeground($hex);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setDimension($width, $height = null)
+        {
+            return \Laravolt\Avatar\Avatar::setDimension($width, $height);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setFontSize($size)
+        {
+            return \Laravolt\Avatar\Avatar::setFontSize($size);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setBorder($size, $color)
+        {
+            return \Laravolt\Avatar\Avatar::setBorder($size, $color);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setShape($shape)
+        {
+            return \Laravolt\Avatar\Avatar::setShape($shape);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getInitial()
+        {
+            return \Laravolt\Avatar\Avatar::getInitial();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getImageObject()
+        {
+            return \Laravolt\Avatar\Avatar::getImageObject();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function buildAvatar()
+        {
+            return \Laravolt\Avatar\Avatar::buildAvatar();
+        }
+         
+    }
+ 
+}
+
+namespace Spatie\LaravelImageOptimizer\Facades { 
+
+    /**
+     * 
+     *
+     */ 
+    class ImageOptimizer {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getOptimizers()
+        {
+            return \Spatie\ImageOptimizer\OptimizerChain::getOptimizers();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function addOptimizer($optimizer)
+        {
+            return \Spatie\ImageOptimizer\OptimizerChain::addOptimizer($optimizer);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setOptimizers($optimizers)
+        {
+            return \Spatie\ImageOptimizer\OptimizerChain::setOptimizers($optimizers);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setTimeout($timeoutInSeconds)
+        {
+            return \Spatie\ImageOptimizer\OptimizerChain::setTimeout($timeoutInSeconds);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function useLogger($log)
+        {
+            return \Spatie\ImageOptimizer\OptimizerChain::useLogger($log);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function optimize($pathToImage, $pathToOutput = null)
+        {
+            return \Spatie\ImageOptimizer\OptimizerChain::optimize($pathToImage, $pathToOutput);
+        }
+         
+    }
+ 
+}
+
 namespace Tymon\JWTAuth\Facades { 
 
     /**
@@ -18391,6 +18740,18 @@ namespace  {
     class Html extends \Collective\Html\HtmlFacade {}
 
     class Browser extends \hisorange\BrowserDetect\Facade {}
+
+    class Image extends \Intervention\Image\Facades\Image {}
+
+    class Date extends \Jenssegers\Date\Date {}
+
+    class EnsoException extends \LaravelEnso\Helpers\app\Exceptions\EnsoException {}
+
+    class Horizon extends \Laravel\Horizon\Horizon {}
+
+    class Avatar extends \Laravolt\Avatar\Facade {}
+
+    class ImageOptimizer extends \Spatie\LaravelImageOptimizer\Facades\ImageOptimizer {}
 
     class JWTAuth extends \Tymon\JWTAuth\Facades\JWTAuth {}
 
